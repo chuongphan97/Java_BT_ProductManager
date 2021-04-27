@@ -63,6 +63,6 @@ public class Product implements Serializable {
                 ", manufacture='" + manufacture + '\'' +
                 ", price=" + price +
                 ", description='" + description + '\'' +
-                '}';
+                '}' + "\n";
     }
 }

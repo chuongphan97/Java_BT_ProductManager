@@ -40,7 +40,7 @@ public class Manager {
         FileInputStream fis = new FileInputStream(path);
         ObjectInputStream ois = new ObjectInputStream(fis);
         ArrayList<Product> products = new ArrayList<>();
-        if (ois.available() > 0){
+        if (fis.available() > 0){
             products = (ArrayList<Product>) ois.readObject();
         }
         ois.close();
